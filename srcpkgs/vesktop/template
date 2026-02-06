@@ -1,6 +1,6 @@
 # Template file for 'vesktop'
 pkgname=vesktop
-version=1.6.1
+version=1.6.4
 revision=1
 hostmakedepends="git nodejs pnpm pkg-config python3 tar"
 makedepends="glib-devel libnotify-devel"
@@ -10,8 +10,7 @@ maintainer="Splayer <mynamesplayer@gmail.com>"
 license="GPL-3.0-only"
 homepage="https://github.com/Vencord/Vesktop"
 distfiles="https://github.com/Vencord/Vesktop/archive/refs/tags/v${version}.tar.gz"
-checksum=ba103cf8a9edef31eb78c1bc3d76e40151f84ff02b2da8fd2bc21a954841b523
-
+checksum=afd5837f884b29db08285a0167ca16a2ebe86747a7496d7590423c575dac6569
 do_build() {
     # prevent pnpm from trying to write to read only system dirs
     export PNPM_HOME="${wrksrc}/.pnpm"
